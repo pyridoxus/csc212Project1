@@ -20,7 +20,7 @@ public class Menu {
 		StringTokenizer stok = new StringTokenizer(str,",");
 		int m, a;
 		p.userSet();
-		p.print();
+		System.out.print(p);
 		a = 1;
 		while(a == 1)
 		{
@@ -132,15 +132,15 @@ public class Menu {
 	public static void printHeader(Point p)
 	{
 		System.out.print("Input point: ");
-		p.print();
+		System.out.print(p);
 		System.out.println("Transformation matrix: ");
 	}
 
 	public static void printFooter(Point p)
 	{
-		math.print();	// Print the last used work matrix
+		System.out.print(math);	// Print the last used work matrix
 		System.out.print("Resultant point: ");
-		p.print();
+		System.out.print(p);
 	}
 
 	public static double degreeToRadian(double r)

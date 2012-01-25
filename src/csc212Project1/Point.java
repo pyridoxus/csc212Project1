@@ -24,11 +24,12 @@ public class Point {
 		this.p[2] = Double.parseDouble(stok.nextToken());
 	}
 
-	public void print() {
-		System.out.print("(" + this.p[0] + ", ");
-		System.out.print(this.p[1] + ", ");
-		System.out.print(this.p[2] + ")");
-		System.out.println();
+	@Override
+	public String toString() {
+		String str = "(" + this.p[0] + ", ";
+		str = str + this.p[1] + ", ";
+		str = str + this.p[2] + ")\n";
+		return str;
 	}
 	
 	public void set(double x, double y, double z) {

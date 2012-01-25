@@ -14,15 +14,18 @@ public class MatrixMath {
 		work[3][3] = 1.0;
 	}
 	
-	public void print() {
+	@Override
+	public String toString() {
+		String str = "";
 		for(int a = 0; a < 4; a++) {
 			for(int b = 0; b < 4; b++) {
-				System.out.print(this.work[a][b] + " ");
+				str = str + this.work[a][b] + " ";
 			}
-			System.out.println();
+			str = str + "\n";
 		}
+		return str;
 	}
-
+	
 	public void translate(Point p, Point t)	// p is translated by t
 	{
 		this.initWorkTranslate(t);
